@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    
+</head>
+<body>
+
+<script>
+    var tomSmith = ["Tom Smith", "123 Main", 120.50]
+
+    document.write("1st Index", tomSmith[0], "<br />");
+
+    tomSmith[3] = "tSmith@aol.com";
+    
+    tomSmith.splice(2, 1, "Pittsburgh", "PA");
+
+    tomSmith.splice(4, 1);
+
+    document.write("Array : ", tomSmith.valueOf(), "<br />");
+
+    document.write("Array : ", tomSmith.join(", "), "<br />");
+
+    delete tomSmith[3];
+
+    tomSmith.sort();
+
+    var numbers = [4, 3, 9, 1,20, 43];
+
+    var combinedArray = numbers.concat(tomSmith);
+
+    tomSmith.pop();
+
+    tomSmith.push("555-1212", "US");
+
+    tomSmith.shift();
+
+    tomSmith.unshift("Tom Smith");
+
+    for(i = 0; i < tomSmith.length; i++){
+    document.write(tomSmith[i], "<br />");
+    }
+
+
+                 </script>
+            
+</body>
+
+</html>
